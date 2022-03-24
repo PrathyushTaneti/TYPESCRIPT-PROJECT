@@ -1,0 +1,125 @@
+// imports
+@import "variables";
+
+// global classes
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url("../components/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    color : $blue;
+    font-size: 1.05rem;
+}
+
+img{
+    position: relative;
+    top : -2.5rem;
+}
+
+// background
+.bg-lightblack{
+    background: rgba(0,0,0,0.7);
+}
+
+.bg-lightblue{
+    background-color: $lightblue;
+}
+
+.bg-darkblue{
+    background-color: $darkblue;
+}
+
+// font family
+.font-cabin{
+    font-family: 'Cabin', sans-serif;
+}
+
+// height and width
+.h-5{
+    height : 4rem;
+}
+
+.w-35{
+    width: 20%;
+}
+
+.w-60{
+    width: 60%;
+}
+
+// hover
+.hover:hover{
+    background-color: $lightblue;
+    color : $white;
+}
+
+// table
+table{
+    border : 2px solid $white;
+}
+
+tr,th,td{
+    border : 1px solid $white;
+}
+
+th,td{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 0rem;
+}
+
+label{
+    display: inline;
+}
+
+// padding and margins
+
+.pb-6{
+    padding-bottom: 4rem;
+}
+
+// border
+.border-darkblue{
+    border: 0.1rem solid $darkblue;
+}
+
+// media tag
+
+@media screen and (max-width:1750px){
+    html{
+        font-size: 80%;
+    }
+    body{
+        height:100%;
+        width: 100%;
+    }
+    table{
+        width: 100%;
+    }
+    img{
+        width : 80%;
+    }
+}
+
+// checkbox
+input[type="checkbox"] {
+    cursor: pointer;
+    height : 1.1rem;
+    width : 1.1rem;
+    border : none;
+    outline: 0.1rem solid $white;
+}
